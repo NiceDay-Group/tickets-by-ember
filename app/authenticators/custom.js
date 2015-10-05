@@ -18,7 +18,7 @@ export default Base.extend({
         type: "POST",
         url: 'http://localhost:3000/signin',
         data: JSON.stringify({
-          username: options.phoneNumber,
+          phoneNumber: options.phoneNumber,
           password: options.password
         }),
         contentType: 'application/json'
