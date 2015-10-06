@@ -12,7 +12,6 @@ export default Ember.Controller.extend({
         password: this.password
       });
       console.log(this.get('session'));
-      debugger;
     }
   }
 });
