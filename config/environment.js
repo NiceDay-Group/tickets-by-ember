@@ -21,7 +21,8 @@ module.exports = function(environment) {
 
   if (environment === 'development') {
     ENV['simple-auth'] = {
-      crossOriginWhitelist: ['http://localhost:3000']
+      crossOriginWhitelist: ['http://localhost:3000'],
+      authorizer: 'authorizer:custom'
     };
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;

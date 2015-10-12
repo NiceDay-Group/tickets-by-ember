@@ -6,10 +6,7 @@ export default Base.extend({
     return new Ember.RSVP.Promise(function(resolve, reject) {
       Ember.$.ajax({
         type: "GET",
-        url: 'http://localhost:3000/isLogged',
-        xhrFields: {
-          withCredentials: true
-        }
+        url: 'http://localhost:3000/api/isLogged'
       }).then(function(response) {
         Ember.run(function() {
           resolve(response);
@@ -26,15 +23,11 @@ export default Base.extend({
     return new Ember.RSVP.Promise(function(resolve, reject) {
       Ember.$.ajax({
         type: "POST",
-        url: 'http://localhost:3000/signin',
+        url: 'http://localhost:3000/api/signin',
         data: JSON.stringify({
           phoneNumber: options.phoneNumber,
           password: options.password
-        }),
-        contentType: 'application/json',
-        xhrFields: {
-          withCredentials: true
-        }
+        })
       }).then(function(response) {
         Ember.run(function() {
           resolve(response);
@@ -51,7 +44,7 @@ export default Base.extend({
     return new Ember.RSVP.Promise(function(resolve, reject) {
       Ember.$.ajax({
         type: "GET",
-        url: 'http://localhost:3000/logout'
+        url: 'http://localhost:3000/api/logout'
       }).then(function(response) {
         Ember.run(function() {
           resolve(response);
