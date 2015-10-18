@@ -1,0 +1,16 @@
+<div>
+  {{#each model as |ticket|}}
+    <table border="1">
+      <tr>
+        <td>Id</td>
+        <td>Bus Id</td>
+        <td>Date</td>
+      </tr>
+      <tr>
+        <td>{{ticket.id}}</td>
+        <td>{{ticket.busId}}</td>
+        <td>{{ticket.dateCreated}}</td>
+      </tr>
+    </table>
+  {{/each}}
+</div>
