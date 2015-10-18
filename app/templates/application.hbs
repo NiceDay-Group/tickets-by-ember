@@ -2,6 +2,8 @@
 
 <header>
   {{#if session.isAuthenticated}}
+    {{#link-to 'index' tagName="button"}}Home{{/link-to}}
+    {{#link-to 'index.tickets' tagName="button"}}Tickets{{/link-to}}
     {{#link-to 'buy-ticket' tagName="button"}}Buy ticket{{/link-to}}
     <button {{ action 'invalidateSession' }}>Logout</button>
   {{else}}
