@@ -1,4 +1,14 @@
 <div>
-  {{input value=busId placeholder="Bus id"}}
-  <button {{action "buyTicket"}}>Buy ticket</button>
+  {{input value=busId placeholder="Bus id" change="uncheck"}}
+  <button {{action "checkBus"}}>Check bus</button>
+  <button {{action "buyTicket"}} disabled={{busIsNotExists}}>Buy ticket</button>
+  <div>
+    {{#if busChecked}}
+      {{#if busRoute}}
+        Bus route: {{busRoute}}
+      {{else}}
+        Bus isn't exists
+      {{/if}}
+    {{/if}}
+  </div>
 </div>
