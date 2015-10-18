@@ -1,14 +1,1 @@
-<div>
-  <h3>News-feed</h3>
-  <ul>
-    {{#each model as |article|}}
-      <li>
-        <div>
-          <h4>{{article.title}} ({{article.dateCreated}})</h4>
-          <p>{{article.description}}</p>
-          <p>{{article.text}}</p>
-        </div>
-      </li>
-    {{/each}}
-  </ul>
-</div>
+{{news-feed articles=model}}
