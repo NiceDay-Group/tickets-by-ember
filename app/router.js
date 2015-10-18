@@ -8,6 +8,7 @@ var Router = Ember.Router.extend({
 Router.map(function() {
   this.route('signin');
   this.route('signup');
+  this.route('buy-ticket');
   this.route('protected');
 });
 

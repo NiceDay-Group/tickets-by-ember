@@ -6,4 +6,5 @@ export default DS.Model.extend({
   password: DS.attr('string'),
   passwordConfirm: DS.attr('string'),
   email: DS.attr('string'),
+  tickets: DS.hasMany('ticket'),
 });
