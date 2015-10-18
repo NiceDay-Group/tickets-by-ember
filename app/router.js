@@ -6,12 +6,13 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('index', { path: '/' }, function() {
+    this.route('tickets');
+  });
   this.route('signin');
   this.route('signup');
-  this.route('tickets');
   this.route('buy-ticket');
   this.route('protected');
-  this.route('tickets');
 });
 
 export default Router;
