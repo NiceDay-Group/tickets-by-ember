@@ -1,16 +1,18 @@
 <div>
-  {{#each model as |ticket|}}
-    <table border="1">
-      <tr>
-        <td>Id</td>
-        <td>Bus Id</td>
-        <td>Date</td>
-      </tr>
+  <table border="1">
+    <tr>
+      <td>Id</td>
+      <td>Bus Id</td>
+      <td>Date</td>
+      <td>Remove</td>
+    </tr>
+    {{#each model as |ticket|}}
       <tr>
         <td>{{ticket.id}}</td>
         <td>{{ticket.busId}}</td>
         <td>{{ticket.dateCreated}}</td>
+        <td {{action "removeTicket" ticket.id}}>X</td>
       </tr>
-    </table>
-  {{/each}}
+    {{/each}}
+  </table>
 </div>
