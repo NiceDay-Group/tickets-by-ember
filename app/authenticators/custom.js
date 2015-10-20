@@ -1,12 +1,13 @@
 import Ember from 'ember';
 import Base from 'simple-auth/authenticators/base';
+import ENV from 'tickets-by-ember/config/environment';
 
 export default Base.extend({
   restore(data) {
     return new Ember.RSVP.Promise(function(resolve, reject) {
       Ember.$.ajax({
         type: "GET",
-        url: 'http://localhost:3000/api/isLogged'
+        url: `${ENV.host}/api/isLogged`
       }).then(function(response) {
         Ember.run(function() {
           resolve(response);
@@ -23,7 +24,7 @@ export default Base.extend({
     return new Ember.RSVP.Promise(function(resolve, reject) {
       Ember.$.ajax({
         type: "POST",
-        url: 'http://localhost:3000/api/signin',
+        url: `${ENV.host}/api/signin`,
         data: JSON.stringify({
           phoneNumber: options.phoneNumber,
           password: options.password
@@ -44,7 +45,7 @@ export default Base.extend({
     return new Ember.RSVP.Promise(function(resolve, reject) {
       Ember.$.ajax({
         type: "GET",
-        url: 'http://localhost:3000/api/logout'
+        url: `${ENV.host}/api/logout`
       }).then(function(response) {
         Ember.run(function() {
           resolve(response);

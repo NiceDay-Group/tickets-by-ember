@@ -20,10 +20,7 @@ module.exports = function(environment) {
   };
 
   if (environment === 'development') {
-    ENV['simple-auth'] = {
-      crossOriginWhitelist: ['http://localhost:3000'],
-      authorizer: 'authorizer:custom'
-    };
+    ENV.host = 'http://localhost:3000';
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
     // ENV.APP.LOG_TRANSITIONS = true;
@@ -44,8 +41,13 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-
+    ENV.host = 'http://tickets-by-node.herokuapp.com'
   }
+
+  ENV['simple-auth'] = {
+    crossOriginWhitelist: [ENV.host],
+    authorizer: 'authorizer:custom'
+  };
 
   return ENV;
 };
