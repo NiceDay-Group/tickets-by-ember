@@ -13,7 +13,10 @@ Router.map(function() {
   this.route('signup');
   this.route('buy-ticket');
   this.route('protected');
-  this.route('control', {});
+  this.route('control');
+  this.route('db');
+  this.route('buses');
+
 });
 
 export default Router;
