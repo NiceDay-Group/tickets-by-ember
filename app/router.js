@@ -17,6 +17,7 @@ Router.map(function() {
   this.route('db');
   this.route('buses');
   this.route('articles');
+  this.route('users');
 
 });
 
