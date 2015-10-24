@@ -1,14 +1,11 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-    actions: {
-        createBus() {
-            let bus = this.store.createRecord('bus', {
-                route: this.route,
-            });
-        bus.save();
-        },
+    model() {
+        return this.store.findAll('bus');
+    },
 
+    actions: {
         removeBus(busId) {
             let bus = this.store.peekRecord('bus', busId);
             bus.deleteRecord();
