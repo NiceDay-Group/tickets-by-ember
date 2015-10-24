@@ -1,0 +1,31 @@
+<div>
+  <h1>Articles</h1>
+  {{input value=title placeholder="Ввеидте title"}}
+  {{input value=description placeholder="Ввеидте description"}}
+  {{input value=text placeholder="Ввеидте text"}}
+    <button {{action "createArticle"}}>Create article</button>
+    <div>
+        <table border="1">
+          <tr>
+            <td>Id</td>
+            <td>Title</td>
+            <td>Description</td>
+            <td>Text</td>
+            <td>DateCreated</td>
+            <td>Remove</td>
+          </tr>
+          {{#each model as |article|}}
+            <tr>
+              <td>{{article.id}}</td>
+              <td>{{article.title}}</td>
+              <td>{{article.description}}</td>
+              <td>{{article.text}}</td>
+              <td>{{article.dateCreated}}</td>
+              <td {{action "removeArticle" article.id}}>X</td>
+            </tr>
+          {{/each}}
+        </table>
+    </div>
+</div>
+
+
