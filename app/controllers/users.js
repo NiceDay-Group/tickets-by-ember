@@ -9,9 +9,8 @@ export default Ember.Controller.extend({
         password: this.password,
         passwordConfirm: this.passwordConfirm,
         email: this.email,
-          });
+        });
       user.save();
     }
   }
-
 });
