@@ -1,0 +1,21 @@
+<div>
+  <h1>Bus</h1>
+  {{input value=route placeholder="Введите маршрут"}}
+  <button {{action "createBus"}}>Create</button>
+    <div>
+      <table border="1">
+        <tr>
+            <td>Id</td>
+            <td>Route</td>
+            <td>Remove</td>
+        </tr>
+      {{#each model as |bus|}}
+        <tr>
+          <td>{{bus.id}}</td>
+          <td>{{bus.route}}</td>
+          <td {{action "removeBus" bus.id}}>X</td>
+        </tr>
+      {{/each}}
+      </table>
+    </div>
+</div>
