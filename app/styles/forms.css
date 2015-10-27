@@ -1,0 +1,92 @@
+.fixed-button-form
+{	
+	position: fixed;
+	bottom: 5.4%;
+	right: 5.4%;
+    background-color: yellow;
+    height: 56px;
+    width: 56px;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .14), 0 4px 8px rgba(0, 0, 0, .28)
+}
+.button-form
+{	
+	position: absolute;
+	bottom: 5.4%;
+	right: 5.4%;
+    background-color: yellow;
+    height: 56px;
+    width: 56px;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .14), 0 4px 8px rgba(0, 0, 0, .28)
+}
+
+.text-link {
+	position: absolute;
+	left: 6.1%;
+	top: 3.5%;
+	color: #fff;
+	text-decoration: none;
+}
+
+.form {
+	display: block;
+	position: absolute;
+	top: 28%;
+	left: 15.8%;
+
+}
+
+.form-text {
+	margin-bottom: 3%;
+	font-size: 18px;
+	display: block;
+	color: rgba(255,255,255, .51);
+}
+
+.form-name {
+	color: #fff;
+	display: block;
+	font-size: 18px;
+}
+
+.form-input {
+  	background-color: #0088ff;
+  	border: none;
+  	outline: none; /*удаляет рамки*/
+  	font-size: 18px;
+  	color: #fff;
+  	border-bottom: 2px solid #fff;
+}
+.input-group {
+	margin: 0px 0 20px 0;
+}
+
+.close-b {
+	position: absolute;
+	left: 6.1%;
+	top: 3.5%;
+	height: 30px;
+	display: block;
+	width: 30px;
+}
+.close-b img {
+	width: 30px;
+	height: 30px;
+}
+
+.notification {
+	display: inline-block;
+	font-size: 12px;
+	position: absolute;
+	bottom: 5.4%;
+	left: 15.8%;
+	color: #fff;;
+}
+
+@media screen and (max-width: 320px) {
+	.notification {
+		font-size: 11px;
+	}

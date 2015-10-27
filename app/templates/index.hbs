@@ -1,2 +1,17 @@
-{{outlet}}
-{{news-feed articles=model}}
+<div>
+		<header class="header">
+		<nav class="clearfix">
+		  <a href="#" class="menu__link menu__link_active">оплата</a>
+			<a href="#" class="menu__link" >расписание</a>
+			<a href="#" class="menu__link" >отзыв</a>
+			<a href="#" class="menu__dots">
+				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24"  class="menu__icon"><path  d="M12,16A2,2 0 0,1 14,18A2,2 0 0,1 12,20A2,2 0 0,1 10,18A2,2 0 0,1 12,16M12,10A2,2 0 0,1 14,12A2,2 0 0,1 12,14A2,2 0 0,1 10,12A2,2 0 	0,1 12,10M12,4A2,2 0 0,1 14,6A2,2 0 0,1 12,8A2,2 0 0,1 10,6A2,2 0 0,1 12,4Z" /></svg>
+			</a>
+		</nav>
+	</header>
+	<a href="#" class="main-block-50">
+		<img class="main-block-50_img" src="assets/images/bus icon.svg" alt="">
+		<span class="main-block-text">Нажмите, чтобы оплатить</span>
+	</a>
+	{{news-feed articles=model}}
+</div>

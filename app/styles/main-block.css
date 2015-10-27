@@ -1,0 +1,54 @@
+* {	box-sizing: border-box; }
+html { height: 100%; }
+body {
+	font-family: "Roboto", "Helvetica Neue", Helvetica, Arial;
+	font-size: 16px;
+	height: 100%;
+	background-color: #fff;
+	margin: 0;
+	padding: 0;
+}
+/*==========MAIN BLOCK==========*/
+.main-block-50 {
+	min-height: 270px;
+	position: relative;
+	text-decoration: none;
+	display: block;
+	width: 100%;
+	padding: 56px 0 0 0;
+	height: 50%;
+	background-color: #08f;
+}
+.main-block-100 {
+	position: relative;
+	text-decoration: none;
+	display: block;
+	width: 100%;
+	padding: 0;
+	background-color: #08f;
+}
+.main-block-50_img {
+	width: 24.5%;
+	height: 24.5%;
+	max-width: 100px;
+	max-height: 100px;
+	display: block;
+	position: absolute;
+	top: 50%;
+	margin-top: -6px;
+	left: 50%;
+	margin-left: -50px;
+}
+.main-block-text {
+	display: block;
+	position: absolute;
+	bottom: 4.5%;
+	left: 15%;
+	right: 15%;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	font-size: 1em;
+	margin: 0;
+}
+/*==========END OF MAIN BLOCK==========*/
