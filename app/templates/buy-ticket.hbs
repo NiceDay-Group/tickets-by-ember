@@ -22,8 +22,7 @@
           </div>
           <span class="form-text">Идентификатор автобуса</span>
           {{input value=busId placeholder="Bus id" change="uncheck"  class="form-input" size=1}}
-        </div>
-     <div class="input-group">
+            <div class="input-group">
       {{#if busChecked}}
       {{#if busRoute}}
       <span class="form-text">Номер маршрута</span>
@@ -33,17 +32,9 @@
       {{/if}}
     {{/if}}
     </div>
+        </div>
+ 
        <!-- <span class="notification">С вашего счета будет списано 3650 руб.</span>-->
       <button {{action "checkBus"}} class="button-form check-button-form"><img src="assets/images/close-button.png" alt=""></button> 
       <button {{action "buyTicket"}} disabled={{busIsNotExists}} class="button-form"><img src="assets/images/check.png" alt=""></button>
     </div>
-    <div class="news">
-    <h4>НОВОСТИ: с 28 июня 2015г. продление Ольшанки</h4>
-    <h6>Изменения пути следования следующих маршрутов</h6>
-    <a href="#" class="news__button">Подробнее</a>
-  </div>
-  <div class="news">
-    <h4>НОВОСТИ: с 28 июня 2015г. продление Ольшанки</h4>
-    <h6>Изменения пути следования следующих маршрутов</h6>
-    <a href="#" class="news__button">Подробнее</a>
-  </div>
