@@ -2,3 +2,9 @@
 @import 'header.css';
 @import 'news.css';
 @import 'forms.css';
+.ember-view {
+	height: 100%;
+}
+#ember404 {
+	height: 100%;
+}

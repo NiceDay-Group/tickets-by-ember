@@ -1,8 +1,38 @@
-<div>
+<!--<div>
   {{input value=name placeholder="Name"}}
   {{input value=phoneNumber placeholder="Phone number"}}
   {{input value=password placeholder="Password"}}
   {{input value=passwordConfirm placeholder="Confirm password"}}
   {{input value=email placeholder="Email"}}
   <button {{action "signup"}}>Sign up</button>
+</div>-->
+
+<div class="main-block-100">
+		<a class="text-link" href="/signin">Уже есть аккаунт?</a>
+		
+		<form class="form" name="registration" method="post" action="#">
+			
+			<div class="input-group">
+				<span class="form-text">Как Вас зовут?*</span>
+				{{input class="form-input" value=name size="15" }}
+			</div>
+			<div class="input-group">
+				<span class="form-text">Номер телефона*</span>
+				  {{input class="form-input" value=phoneNumber size="15" }}
+			</div>
+			<div class="input-group">
+				<span class="form-text">Пароль*</span>
+			{{input class="form-input" type="password" value=password size="15" }}
+			</div>
+			<div class="input-group">
+				<span class="form-text">Повторите пароль*</span>
+				{{input class="form-input" type="password" value=passwordConfirm size="15" }}
+			</div>
+			<div class="input-group">
+				<span class="form-text">Скажите Ваш e-mail*</span>
+				{{input class="form-input" value=email size="15"}}
+				
+			</div>
+		</form>
+		<button {{action "signup"}} class="fixed-button-form"><img src="assets/images/check.png" alt=""></button>
 </div>

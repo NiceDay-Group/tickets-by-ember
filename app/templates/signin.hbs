@@ -1,3 +1,12 @@
-{{input value=phoneNumber}}
-{{input value=password}}
-<button {{action "login"}}>Login</button>
+<div class="main-block-100">
+		<a class="text-link" href="/signup">Регистрация</a>
+		<form class="form" action="#" method="post">
+			<div class="input-group">
+				<span class="form-text">Номер телефона</span>
+				{{input value=phoneNumber class="form-input" size="12"}}			
+			</div>
+			<span class="form-text">Пароль</span>
+			{{input value=password type="password" class="form-input" size="12"}}
+		</form>
+		<button class="button-form" {{action "login"}}><img src="assets/images/check.png"></button>
+</div>
