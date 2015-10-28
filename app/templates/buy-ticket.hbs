@@ -1,18 +1,3 @@
-<!--<div>
-  {{input value=busId placeholder="Bus id" change="uncheck"}}
-  <button {{action "checkBus"}}>Check bus</button>
-  <button {{action "buyTicket"}} disabled={{busIsNotExists}}>Buy ticket</button>
-  <div>
-    {{#if busChecked}}
-      {{#if busRoute}}
-        Bus route: {{busRoute}}
-      {{else}}
-        Bus isn't exists
-      {{/if}}
-    {{/if}}
-  </div>
-</div>
--->
     <div class="main-block-50">
       <a href="#" class="close-b"><img src="assets/images/close-button.png" alt=""></a>
         <div class="form">
@@ -35,8 +20,6 @@
             {{/if}}
           </div>
         </div>
- 
-       <!-- <span class="notification">С вашего счета будет списано 3650 руб.</span>-->
       <button {{action "checkBus"}} class="button-form check-button-form"><img src="assets/images/close-button.png" alt=""></button> 
       <button {{action "buyTicket"}} disabled={{busIsNotExists}} class="button-form"><img src="assets/images/check.png" alt=""></button>
     </div>
