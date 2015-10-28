@@ -20,18 +20,20 @@
             <span class="form-text">Имя</span>
             <span class="form-name">Антон</span>
           </div>
-          <span class="form-text">Идентификатор автобуса</span>
-          {{input value=busId placeholder="Bus id" change="uncheck"  class="form-input" size=1}}
-            <div class="input-group">
-      {{#if busChecked}}
-      {{#if busRoute}}
-      <span class="form-text">Номер маршрута</span>
-       <span class="form-name"> Bus route: {{busRoute}}</span>
-      {{else}}
-         <span class="form-name"> Bus isn't exists</span>
-      {{/if}}
-    {{/if}}
-    </div>
+          <div class="input-group">
+            <span class="form-text">Идентификатор автобуса</span>
+            {{input value=busId placeholder="Bus id" change="uncheck"  class="form-input" size=1}}
+          </div>
+          <div class="input-group">
+            {{#if busChecked}}
+              {{#if busRoute}}
+              <span class="form-text">Номер маршрута</span>
+              <span class="form-name"> Bus route: {{busRoute}}</span>
+              {{else}}
+                 <span class="form-name"> Bus isn't exists</span>
+              {{/if}}
+            {{/if}}
+          </div>
         </div>
  
        <!-- <span class="notification">С вашего счета будет списано 3650 руб.</span>-->
