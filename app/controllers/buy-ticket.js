@@ -11,7 +11,10 @@ export default Ember.Controller.extend({
         busId: this.busId,
       });
 
-      ticket.save();
+      ticket.save()
+        .then(() => {
+          this.transitionToRoute('index.tickets');
+        });
     },
 
     checkBus() {
