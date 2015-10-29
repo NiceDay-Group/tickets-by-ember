@@ -2,7 +2,7 @@
 		<header class="header">
 		<nav class="clearfix">
       {{#if session.isAuthenticated}}
-        <a href="#" class="menu__link menu__link_active">оплата</a>
+        {{#link-to 'buy-ticket' class="menu__link menu__link_active"}}оплата{{/link-to}}
         <a href="#" class="menu__link" >расписание</a>
         <a href="#" class="menu__link" >отзыв</a>
         <a href="#" class="menu__link" {{ action 'invalidateSession' }} >выйти</a>
