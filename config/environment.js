@@ -41,7 +41,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-    ENV.host = 'http://tickets-by-node.herokuapp.com'
+    ENV.host = 'http://tickets-dev-env-tj2htcigaq.elasticbeanstalk.com'
   }
 
   ENV['simple-auth'] = {
