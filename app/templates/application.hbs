@@ -2,8 +2,6 @@
   <nav class="clearfix">
     {{#if session.isAuthenticated}}
       {{#link-to 'buy-ticket' class="menu__link menu__link_active"}}оплата{{/link-to}}
-      <a href="#" class="menu__link" >расписание</a>
-      <a href="#" class="menu__link" >отзыв</a>
       <a href="#" class="menu__link" {{ action 'invalidateSession' }} >выйти</a>
     {{else}}
       {{#link-to 'signin' class="menu__link"}}войти{{/link-to}}
@@ -16,4 +14,5 @@
     </a>
   </nav>
 </header>
+<div class="block-56px"></div>
 {{outlet}}
