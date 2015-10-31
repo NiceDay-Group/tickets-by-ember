@@ -18,15 +18,19 @@ export default Ember.Controller.extend({
     },
 
     checkBus() {
-      let bus = this.store.find('bus', this.busId)
-        .then((bus) => {
-          this.set('busChecked', true);
-          this.set('busRoute', bus.get('route'));
-        })
-        .catch((err) => {
-          this.set('busChecked', true);
-          this.set('busRoute', null);
-        })
+      this.set('busChecked', false);
+
+      if (this.get('busId').length === 3) {
+        let bus = this.store.find('bus', this.busId)
+          .then((bus) => {
+            this.set('busChecked', true);
+            this.set('busRoute', bus.get('route'));
+          })
+          .catch((err) => {
+            this.set('busChecked', true);
+            this.set('busRoute', null);
+          });
+      }
     }
   }
 });
