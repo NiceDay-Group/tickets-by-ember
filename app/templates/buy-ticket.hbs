@@ -7,15 +7,9 @@
         </div>
         <div class="input-group">
             <span class="form-text">Идентификатор автобуса</span>
-<<<<<<< HEAD
             {{input value=busId placeholder="Bus id" change="uncheck"  class="form-input" size=5}}
         </div>
         <div class="input-group">
-=======
-            {{input value=busId placeholder="Bus id" key-up="checkBus" class="form-input" size=5}}
-          </div>
-          <div class="input-group">
->>>>>>> 18d3889c3f9f61793f436863a8ec5fb512ef7f84
             {{#if busChecked}}
               {{#if busRoute}}
               <span class="form-text">Номер маршрута</span>
@@ -25,10 +19,6 @@
               {{/if}}
             {{/if}}
         </div>
-<<<<<<< HEAD
-=======
-      <button {{action "buyTicket"}} disabled={{busIsNotExists}} class="button-form"><img src="assets/images/check.png" alt=""></button>
->>>>>>> 18d3889c3f9f61793f436863a8ec5fb512ef7f84
     </div>
     <button {{action "checkBus"}} class="button-form check-button-form"><img src="assets/images/close-button.png" alt=""></button>
     <button {{action "buyTicket"}} disabled={{busIsNotExists}} class="button-form"><img src="assets/images/check.png" alt=""></button>
