@@ -2,6 +2,3 @@
 @import 'header.css';
 @import 'news.css';
 @import 'forms.css';
-.ember-view {
-	background-color: #08f;
-}
