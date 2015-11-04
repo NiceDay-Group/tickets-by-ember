@@ -7,7 +7,7 @@
         </div>
         <div class="input-group">
             <span class="form-text">Идентификатор автобуса</span>
-            {{input value=busId placeholder="Bus id" change="uncheck"  class="form-input" size=5}}
+            {{input value=busId  change="uncheck"  class="form-input" size=5}}
         </div>
         <div class="input-group">
             {{#if busChecked}}
@@ -20,6 +20,5 @@
             {{/if}}
         </div>
     </div>
-    <button {{action "checkBus"}} class="button-form check-button-form"><img src="assets/images/close-button.png" alt=""></button>
     <button {{action "buyTicket"}} disabled={{busIsNotExists}} class="button-form"><img src="assets/images/check.png" alt=""></button>
 </div>
