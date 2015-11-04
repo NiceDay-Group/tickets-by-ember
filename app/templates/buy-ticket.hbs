@@ -1,24 +1,25 @@
 <div class="main-block-50">
-    <a href="#" class="close-b"><img src="assets/images/close-button.png" alt=""></a>
-    <div class="form">
-        <div class="input-group">
-            <span class="form-text">Имя</span>
-            <span class="form-name">Антон</span>
-        </div>
-        <div class="input-group">
-            <span class="form-text">Идентификатор автобуса</span>
-            {{input value=busId  change="uncheck"  class="form-input" size=5}}
-        </div>
-        <div class="input-group">
-            {{#if busChecked}}
-              {{#if busRoute}}
-              <span class="form-text">Номер маршрута</span>
-              <span class="form-name"> Bus route: {{busRoute}}</span>
-              {{else}}
-                 <span class="form-name"> Bus isn't exists</span>
-              {{/if}}
-            {{/if}}
-        </div>
+  <a href="#" class="close-b"><img src="assets/images/close-button.png" alt=""></a>
+  <div class="form">
+    <div class="input-group">
+        <span class="form-text">Имя</span>
+        <span class="form-name">Антон</span>
     </div>
-    <button {{action "buyTicket"}} disabled={{busIsNotExists}} class="button-form"><img src="assets/images/check.png" alt=""></button>
+    <div class="input-group">
+        <span class="form-text">Идентификатор автобуса</span>
+        {{input value=busId placeholder="Bus id" key-up="checkBus" class="form-input" size=5}}
+      </div>
+      <div class="input-group">
+        {{#if busChecked}}
+          {{#if busRoute}}
+          <span class="form-text">Номер маршрута</span>
+          <span class="form-name"> Bus route: {{busRoute}}</span>
+          {{else}}
+             <span class="form-name"> Bus isn't exists</span>
+          {{/if}}
+        {{/if}}
+    </div>
+
+  <button {{action "buyTicket"}} disabled={{busIsNotExists}} class="button-form"><img src="assets/images/check.png" alt=""></button>
+  </div>
 </div>
