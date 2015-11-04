@@ -13,7 +13,7 @@ export default Ember.Controller.extend({
 
       ticket.save()
         .then(() => {
-          this.transitionToRoute('index.tickets');
+          this.transitionToRoute('index.ticket');
         });
     },
 
