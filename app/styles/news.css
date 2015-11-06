@@ -6,16 +6,16 @@
 }
 h4 {
 	font-weight: bold;
+  font-size: 15px;/*Переделать в спан*/
 }
 .news__button {
 	font-weight: bold;
-	width: 23%;
+	width: 100px;
+  font-size: 9px;
 	padding: 0 2px;
 	color: #000;
 	text-decoration: none;
-	line-height: 20px;
 	display: inline-block;
-	width: 123px;
 	height: 30px;
 	background-color: yellow;
 	text-align: center;
